@@ -1,2 +1,5 @@
 export const config = { runtime: 'edge' };
-export default (req, res) => res.status(200).json({ ok: 1 });
+
+export default function handler(req, res) {
+  res.status(200).json({ ok: 1 });
+}
